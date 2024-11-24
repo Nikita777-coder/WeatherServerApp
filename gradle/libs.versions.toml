@@ -1,0 +1,21 @@
+[versions]
+lombok = "1.18.30"
+springboot = "3.4.0"
+junit = "5.11.3"
+postgresql = "42.7.4"
+
+[libraries]
+lombok-lib = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+springboot-logging = {module = "org.springframework.boot:spring-boot-starter-logging", version.ref = "springboot"}
+springboot-starter = {module = "org.springframework.boot:spring-boot-starter", version.ref="springboot"}
+junit-jupiterapi = {module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit"}
+postgresql-jdbc = {module = "org.postgresql:postgresql", version.ref = "postgresql"}
+
+[bundles]
+sharedlibs = [
+    "lombok-lib",
+    "springboot-logging",
+    "springboot-starter",
+    "junit-jupiterapi",
+    "postgresql-jdbc",
+]
