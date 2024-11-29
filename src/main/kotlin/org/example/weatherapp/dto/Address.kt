@@ -9,12 +9,15 @@ import java.util.UUID
 @Getter
 @Setter
 class Address(
-    private val city: String,
-    private val country: String,
-    private var streetName: String?,
-    private var streetNumber: Int? = -1,
-    private var state: String?,
-    private var postalcode: String?) {
+    val city: String,
+    val country: String,
+    var streetName: String?,
+    var streetNumber: Int? = -1,
+    var state: String?,
+    var postalcode: String?) {
 
     private lateinit var id: UUID
+    fun getId(): UUID {
+        return id
+    }
 }

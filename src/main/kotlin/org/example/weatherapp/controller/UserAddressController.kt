@@ -2,6 +2,7 @@ package org.example.weatherapp.controller
 
 import jakarta.validation.Valid
 import org.example.weatherapp.dto.Address
+import org.example.weatherapp.service.UserAddressService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PatchMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -13,7 +14,9 @@ import java.util.UUID
 
 @RestController
 @RequestMapping("/user-addresses")
-class UserAddressController {
+final class UserAddressController(
+    private val userAddressService: UserAddressService
+) {
     @GetMapping
     fun getAddresses(@RequestParam userId: UUID): List<Address> {
         throw NotImplementedError()

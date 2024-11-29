@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: WeatherApp
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: yourpassword
+      database: 0

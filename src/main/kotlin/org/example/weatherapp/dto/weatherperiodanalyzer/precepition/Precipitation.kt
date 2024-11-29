@@ -1,12 +1,8 @@
 package org.example.weatherapp.dto.weatherperiodanalyzer.precepition
 
-import lombok.Getter
-import lombok.Setter
-
-@Getter
-@Setter
-class Precipitation {
-    private var precipitationSum: ULong? = null
-    private var rainSum: ULong? = null
-    private var snowfallSum: ULong? = null
+data class Precipitation(
+    var precipitationSum: ULong? = null,
+    var rainSum: ULong? = null,
+    var snowfallSum: ULong? = null
+) {
 }

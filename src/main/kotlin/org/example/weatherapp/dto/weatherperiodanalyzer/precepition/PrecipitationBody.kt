@@ -6,7 +6,7 @@ import java.util.*
 
 
 class PrecipitationBody(
-    private val requiredData: RequiredData,
-    private val precipitationTags: List<PrecipitationType>
+    val requiredData: RequiredData,
+    val precipitationTags: List<PrecipitationType>
 ) {
 }

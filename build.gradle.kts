@@ -42,6 +42,8 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("org.hibernate.validator:hibernate-validator:8.0.0.Final")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis:3.4.0")
+    implementation("com.google.code.gson:gson:2.11.0")
 }
 
 kotlin {
